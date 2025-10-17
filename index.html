@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Profile Card</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<article class="profile-card" data-testid="test-profile-card">
+			<figure class="avatar">
+				<img
+					src="Wisdoms.jpg"
+					alt="User Avatar"
+					data-testid="test-user-avatar"
+				/>
+			</figure>
+
+			<div class="profile-info">
+				<header>
+					<h2 data-testid="test-user-name">Wisdom Onu</h2>
+				</header>
+
+				<p data-testid="test-user-bio">
+					Frontend engineer passionate about crafting interactive user
+					interfaces and improving accessibility on the web.
+				</p>
+
+				<p class="time">
+					<span class="time-label">Current time (ms):</span>
+					<span data-testid="test-user-time" id="user-time"></span>
+				</p>
+
+				<nav aria-label="Social Links">
+					<h3>Find Me On Social Media</h3>
+					<ul class="social-links" data-testid="test-user-social-links">
+						<li>
+							<a
+								href="https://x.com/codeSeven_7"
+								target="_blank"
+								rel="noopener noreferrer"
+								data-testid="test-user-social-twitter"
+							>
+								Twitter
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://github.com/OnuWisdom"
+								target="_blank"
+								rel="noopener noreferrer"
+								data-testid="test-user-social-github"
+							>
+								GitHub
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://linkedin.com/in/onu-wisdom"
+								target="_blank"
+								rel="noopener noreferrer"
+								data-testid="test-user-social-linkedin"
+							>
+								LinkedIn
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<section class="hobbies">
+					<h3>Hobbies</h3>
+					<ul data-testid="test-user-hobbies">
+						<li>Playing Football</li>
+						<li>Playing Chess</li>
+						<li>Watching Movies</li>
+					</ul>
+				</section>
+
+				<section class="dislikes">
+					<h3>Dislikes</h3>
+					<ul data-testid="test-user-dislikes">
+						<li>Lacking Motivation</li>
+						<li>A dead battery</li>
+						<li>Being late</li>
+					</ul>
+				</section>
+			</div>
+		</article>
+
+		<script src="script.js"></script>
+	</body>
+</html>
