@@ -141,6 +141,46 @@ section ul {
 	margin-left: 1.5rem;
 }
 
+h2,
+h1 {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+form {
+	max-width: 900px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	background-color: antiquewhite;
+	padding: 2rem;
+	border-radius: 1rem;
+}
+
+label {
+	font-weight: bold;
+}
+
+input,
+textarea,
+button {
+	padding: 0.5rem 2rem;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+
+.error {
+	color: red;
+	font-size: 0.9rem;
+}
+
+.success {
+	color: green;
+	font-weight: bold;
+}
+
 @media (min-width: 700px) {
 	.profile-card {
 		flex-direction: row;
